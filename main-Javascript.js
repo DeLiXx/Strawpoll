@@ -28,3 +28,13 @@ function updateBody(strHtml) {
         $( ".body" ).html( data );
       }), "html");
 }
+
+function appendToPoll(){
+    $(".pollGroup").append(
+    "<div class='col-md-12'>" +
+    "<div class='input-group'>" +
+    "<input name='appendedcheckbox' class='form-control pollOption' placeholder='Enter poll option' type='text' >" +
+    "</input>" +
+    "</div>"
+    );
+}

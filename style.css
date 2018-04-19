@@ -9,3 +9,29 @@ nav{
 	height: 8%;
 	width:100%;
 }
+form{
+	margin-top: 5%;
+	background: #f9de87;
+}
+.body{
+	margin-top: 2%;
+}
+
+.pollOption{
+	background: none;
+	border:none;
+	border-bottom: 2px solid #a7b340;
+}
+
+.pollOptionHeader{
+	font-size: 2em;
+}
+
+.logo{
+	position: absolute; top:3px; left:0;
+	z-index: -1;
+}
+
+button.navbar-toggler{
+	background:white;
+}

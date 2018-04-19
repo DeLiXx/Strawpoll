@@ -2,38 +2,29 @@
     <form class="form-horizontal formular">
         <fieldset>
             <!-- Form Name -->
-            <legend>Vote your choice</legend>
+            <legend></legend>
+            <input name="appendedcheckbox" class="form-control pollOption pollOptionHeader" placeholder="Enter question" type="text" >
             <!-- Appended checkbox -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="appendedcheckbox">Vote nummero one</label>
+            <div class="form-group pollGroup">
               <div class="col-md-12">
                 <div class="input-group">
-                  <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" placeholder="placeholder" type="text" >
-                  </span>
+                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" >
                 </div>
               </div>
-              <label class="col-md-4 control-label" for="appendedcheckbox">Vote nummero two</label>
               <div class="col-md-12">
                 <div class="input-group">
-                  <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" placeholder="placeholder" type="text" >
-                  </span>
+                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" >
                 </div>
               </div>
-              <label class="col-md-4 control-label" for="appendedcheckbox">Vote nummero three</label>
               <div class="col-md-12">
                 <div class="input-group">
-                  <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" placeholder="placeholder" type="text" >
-                  </span>
-                </div>
-              </div>
-              <label class="col-md-4 control-label" for="appendedcheckbox">Vote nummero four</label>
-              <div class="col-md-12">
-                <div class="input-group">
-                  <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" placeholder="placeholder" type="text" >
-                  </span>
+                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" >
                 </div>
               </div>
             </div>
         </fieldset>
     </form>
 </div>
+<script>
+  $(".pollGroup").on("keypress", "div:last input", function(){appendToPoll();});
+</script>
