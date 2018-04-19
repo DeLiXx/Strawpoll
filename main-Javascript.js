@@ -1,14 +1,12 @@
 $(document).ready(function() { onLoad() });
 
 function onLoad() {
-    var objQuerry;
-    objQuerry = getQuerryParams();
+    var objQuery;
+    objQuery = getQuerryParams();
 
     if( objQuery!= null && objQuery.id != null) {
         //TBA updatesBody with selected strawpoll
         }
-
-        $(".navHome").click(function() { updateBody("home.html")})
 }
 
 //Returns all URL Query Paramters in a JS-Object
@@ -25,5 +23,7 @@ function getQuerryParams() {
 }
 
 function updateBody(strHtml) {
-    $("body").replace(strHtml)
+    jQuery.get( strHtml, "" ,( function( data ) {
+        $( ".container" ).html( data );
+      }), "html");
 }
