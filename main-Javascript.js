@@ -22,8 +22,9 @@ function getQuerryParams() {
         return vars;
 }
 
+//Replaces Bodyhtml with parameter URL
 function updateBody(strHtml) {
     jQuery.get( strHtml, "" ,( function( data ) {
-        $( ".container" ).html( data );
+        $( ".body" ).html( data );
       }), "html");
 }
