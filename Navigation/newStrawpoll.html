@@ -3,28 +3,28 @@
         <fieldset>
             <!-- Form Name -->
             <legend></legend>
-            <input name="appendedcheckbox" class="form-control pollOption pollOptionHeader" placeholder="Enter question" type="text" >
+            <input name="appendedcheckbox" class="form-control pollOption pollOptionHeader" placeholder="Enter question" type="text" />
             <!-- Appended checkbox -->
             <div class="form-group pollGroup">
               <div class="col-md-12">
                 <div class="input-group">
-                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" >
+                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="input-group">
-                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" >
+                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="input-group">
-                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" >
+                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" />
                 </div>
               </div>
             </div>
         </fieldset>
     </form>
+    <script>
+        $(".pollGroup").on("keypress", "div:last input", function(){appendToPoll();});
+    </script>
 </div>
-<script>
-  $(".pollGroup").on("keypress", "div:last input", function(){appendToPoll();});
-</script>
