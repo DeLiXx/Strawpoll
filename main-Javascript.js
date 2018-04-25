@@ -6,6 +6,12 @@ function onLoad() {
 
     if( objQuery!= null && objQuery.id != null) {
         //TBA updatesBody with selected strawpoll
+
+        /**/
+        alert(objQuery);
+
+
+        
         }
 }
 

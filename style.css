@@ -8,6 +8,7 @@ nav{
 	z-index: 100;
 	height: 8%;
 	width:100%;
+	opacity: 70%;
 }
 form{
 	margin-top: 5%;
@@ -42,4 +43,5 @@ form{
 
 button.navbar-toggler{
 	background:white;
+	z-index: 1;
 }
