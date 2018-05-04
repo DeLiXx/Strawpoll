@@ -8,8 +8,8 @@ $empfaenger = "moricevaneckeveld@gmail.com"; //Empfänger-Adresse
 $mail_cc = ""; //CC-Adresse, diese E-Mail-Adresse bekommt einer weitere Kopie
 $betreff = "Feedback vom Strawpoll"; //Betreff der Email
  
-$url_ok = "../index.php"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
-$url_fehler = "../error.php"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
+//$url_ok = "../index.php"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
+//$url_fehler = "../error.php"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
  
  
 //Diese Felder werden nicht in der Mail stehen
