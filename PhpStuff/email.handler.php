@@ -4,7 +4,7 @@ $email_from = "no-reply@World-best-Strawpoll.de";   //Absender falls keiner ange
 $sendermail_antwort = true;      //E-Mail Adresse des Besuchers als Absender. false= Nein ; true = Ja
 $name_von_emailfeld = "Email";   //Feld in der die Absenderadresse steht
  
-$empfaenger = "h449322@nwytg.com"; //Empfänger-Adresse
+$empfaenger = "moricevaneckeveld@gmail.com"; //Empfänger-Adresse
 $mail_cc = ""; //CC-Adresse, diese E-Mail-Adresse bekommt einer weitere Kopie
 $betreff = "Feedback vom Strawpoll"; //Betreff der Email
  
