@@ -47,28 +47,8 @@
           </div>
     </header>
     <body>
-      <form action="PhpStuff/simple.mail.php" method="post" role="form">
-    <div class="form-group">
-        <input type="text" name="name" class="form-control" id="Name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-        <div class="validation"></div>
-    </div>
-    <div class="form-group">
-        <input type="email" class="form-control" name="email" id="Email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-        <div class="validation"></div>
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" name="subject" id="Betreff" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-        <div class="validation"></div>
-    </div>
-    <div class="form-group">
-        <textarea class="form-control" name="Nachricht" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-        <div class="validation"></div>
-    </div>
-    
-    <button type="submit" class="btn btn-info">Send form</button>
-</form>
       <?php
-        echo "Jap1 PHP funktioniert";
+        echo "Jap PHP funktioniert";
       ?>
       <div class="body container">
 
