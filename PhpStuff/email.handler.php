@@ -6,7 +6,7 @@ $name_von_emailfeld = "Email";   //Feld in der die Absenderadresse steht
  
 $empfaenger = "moricevaneckeveld@gmail.com"; //Empfänger-Adresse
 $mail_cc = ""; //CC-Adresse, diese E-Mail-Adresse bekommt einer weitere Kopie
-$betreff = "Feedback vom Stawpoll"; //Betreff der Email
+$betreff = "Feedback vom Strawpoll"; //Betreff der Email
  
 $url_ok = "../index.php"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
 $url_fehler = "../error.php"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
@@ -65,9 +65,11 @@ $mail_senden = mail($empfaenger,$betreff,$msg,$header);
  
 //Weiterleitung, hier könnten jetzt per echo auch Ausgaben stehen
 if($mail_senden){
-  header("Location: ../index.php?completed"); //Mail wurde gesendet
+  //header("Location: ../index.php?completed"); //Mail wurde gesendet
+  echo "Funktioniert";
   exit();
 } else{
-  header("Location: ../error.php?error"); //Fehler beim Senden
+  //header("Location: ../error.php?error"); //Fehler beim Senden
+  echo "FEHLER!!!!";
   exit();
 }
