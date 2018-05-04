@@ -16,10 +16,8 @@
         <title>Testeroni Maccaroni</title>
     </head>
     <header>
-
         <div class="container-fluid">
             <div class="row">
-              <<?php echo "Jap Php Funktioniert"; ?>
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgrey;">
                   <div class="navbar-brand navHome">
                     <a  class="logo" href="javascript:updateBody('Navigation/home.html')">
@@ -49,6 +47,9 @@
           </div>
     </header>
     <body>
+      <?php
+        echo "awduhawdzgaduaghdugawdugad Jap";
+      ?>
       <div class="body container">
 
         <script>updateBody("Navigation/home.html")</script>
