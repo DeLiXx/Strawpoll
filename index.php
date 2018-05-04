@@ -48,7 +48,7 @@
     </header>
     <body>
       <?php
-        echo "awduhawdzgaduaghdugawdugad Jap";
+        echo "Jap PHP funktioniert";
       ?>
       <div class="body container">
 
