@@ -13,6 +13,9 @@ nav{
 form{
 	margin-top: 5%;
 	background: #f9de87;
+	padding: 10px;
+	border: 2px solid #f9de87;
+	border-radius: 10px;
 }
 .body{
 	margin-top: 2%;
