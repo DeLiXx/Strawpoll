@@ -71,5 +71,10 @@ if($mail_senden){
 } else{
   //header("Location: ../error.php?error"); //Fehler beim Senden
   echo "FEHLER!!!!";
+  echo $empfaenger;
+  echo $betreff;
+  echo $msg;
+  echo $header;
+  echo $mail_senden;
   exit();
 }

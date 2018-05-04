@@ -68,7 +68,7 @@
     <button type="submit" class="btn btn-info">Send form</button>
 </form>
       <?php
-        echo "Jap1 PHP funktioniert";
+        echo "Jap PHP funktioniert";
       ?>
       <div class="body container">
 
