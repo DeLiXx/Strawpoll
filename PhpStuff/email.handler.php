@@ -5,11 +5,11 @@ $sendermail_antwort = true;      //E-Mail Adresse des Besuchers als Absender. fa
 $name_von_emailfeld = "Email";   //Feld in der die Absenderadresse steht
  
 $empfaenger = "moricevaneckeveld@gmail.com"; //Empfänger-Adresse
-$mail_cc = "h441390@nwytg.com"; //CC-Adresse, diese E-Mail-Adresse bekommt einer weitere Kopie
-$betreff = "Neue Kontaktanfrage"; //Betreff der Email
+$mail_cc = ""; //CC-Adresse, diese E-Mail-Adresse bekommt einer weitere Kopie
+$betreff = "Feedback vom Stawpoll"; //Betreff der Email
  
-$url_ok = "../index.php"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
-$url_fehler = "../error.php"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
+$url_ok = "../index.html#sucess"; //Zielseite, wenn E-Mail erfolgreich versendet wurde
+$url_fehler = "../imdex.html#error"; //Zielseite, wenn E-Mail nicht gesendet werden konnte
  
  
 //Diese Felder werden nicht in der Mail stehen
