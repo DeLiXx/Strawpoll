@@ -6,5 +6,4 @@ fwrite($aIncrFile, &aIncr + 1);
 fclose($aIncrFile);
 
 
-?echo("worked");
 ?>
