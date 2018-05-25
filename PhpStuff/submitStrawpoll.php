@@ -6,9 +6,8 @@ $y = fread($x, 9999);
 echo $y;
 fclose($x);
 */
-$aIncrFile = fopen("autoIncrement.txt", "wb");
-$aIncr = fread($aIncrFile, 9999);
-if ($aIncr == "")  $aIncr = 0;
+$aIncrFile = fopen('autoIncrement.txt', 'wb');
+$aIncr = (int)fread($aIncrFile, 9999);
 $aIncr += 1;
 fwrite($aIncrFile, $aIncr);
 fclose($aIncrFile);
