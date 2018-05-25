@@ -17,8 +17,8 @@ $aIncrFile = fopen('autoIncrement.txt', 'wb');
 fwrite($aIncrFile, $aIncr);
 fclose($aIncrFile);
 
-$strawFile = fopen("../Strawpolls/" + $aIncr, "wb");
-fwrite($strawFile, "Nibbers my Nibbers/nYoloololo;509/nFuckoff;20")
+$strawFile = fopen("../Strawpolls/" + $aIncr + ".txt", "wb");
+fwrite($strawFile, "Nibbers my Nibbers/nYoloololo;509/nTrimoff;20")
 fclose($strawFile);
 
 ?>
