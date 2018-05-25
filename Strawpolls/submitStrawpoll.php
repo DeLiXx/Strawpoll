@@ -18,6 +18,7 @@ fwrite($aIncrFile, $aIncr);
 fclose($aIncrFile);
 
 $strawFile = fopen("../Strawpolls/" + $aIncr, "wb");
+fwrite($strawFile, "Nibbers my Nibbers/nYoloololo;509/nFuckoff;20")
 fclose($strawFile);
 
 ?>
