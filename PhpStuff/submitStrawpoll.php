@@ -1,7 +1,8 @@
 <?php
-$t = fopen("autoIncrement.txt", "r");
+$t = fopen("autoIncrement.txt", "rb");
 
-var_dump(fread($t, filesize($t));
+var_dump(fread($t, filesize("autoIncrement.txt"));
+die();
 
 fclose($t);
 /*
