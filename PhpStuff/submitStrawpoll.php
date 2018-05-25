@@ -1,10 +1,9 @@
 <?php
-$t = fopen("autoIncrement.txt", "rb");
+$x = fopen('autoIncrement.txt', 'rb');
+$y = fread($x, 9999);
 
-var_dump(fread($t, filesize("autoIncrement.txt"));
-die();
-
-fclose($t);
+echo $y;
+fclose($x);
 /*
 $aIncrFile = fopen("autoIncrement.txt", "w");
 $aIncr = fread($aIncrFile,filesize("autoIncrement.txt"));
