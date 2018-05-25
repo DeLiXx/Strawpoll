@@ -48,10 +48,6 @@
     </header>
     <body>
       
-      <?php
-        echo "Jap1 PHP funktioniert";
-      ?>
-      
       <div class="body container">
 
         <script>updateBody("Navigation/home.html")</script>
