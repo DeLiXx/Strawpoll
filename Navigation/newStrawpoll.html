@@ -6,25 +6,15 @@
             <input name="appendedcheckbox" class="form-control pollOption pollOptionHeader" placeholder="Enter question" type="text" />
             <!-- Appended checkbox -->
             <div class="form-group pollGroup">
-              <div class="col-md-12">
-                <div class="input-group">
-                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" />
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="input-group">
-                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" />
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="input-group">
-                  <input name="appendedcheckbox" class="form-control pollOption" placeholder="Enter poll option" type="text" />
-                </div>
-              </div>
             </div>
         </fieldset>
+        <input type="button" class="btn btn-accept" action="submitStrawpoll.php">
+        </input>
     </form>
     <script>
+      appendToPoll();
+      appendToPoll();
+      appendToPoll();
         $(".pollGroup").on("keypress", "div:last input", function(){appendToPoll();});
     </script>
 </div>
