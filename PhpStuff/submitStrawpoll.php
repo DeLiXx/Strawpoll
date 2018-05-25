@@ -8,7 +8,9 @@ fclose($x);
 */
 $aIncrFile = fopen('autoIncrement.txt', 'wb');
 $aIncr = (int)fread($aIncrFile, 9999);
+echo $aIncr;
 $aIncr += 1;
+echo $aIncr;
 fwrite($aIncrFile, $aIncr);
 fclose($aIncrFile);
 
