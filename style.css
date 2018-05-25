@@ -48,3 +48,8 @@ button.navbar-toggler{
 	background:white;
 	z-index: 1;
 }
+#chart div {
+	display: inline-block;
+	width: 40px;
+	margin-right: 6px;
+}

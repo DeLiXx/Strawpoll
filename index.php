@@ -48,10 +48,22 @@
     </header>
     <body>
       
-      <div class="body container">
+        <div class="body container">
+            
+            <div class="chart"></div>
+            
+            <script src="https://d3js.org/d3.v5.min.js"></script>
 
-        <script>updateBody("Navigation/home.html")</script>
+            <script>d3.select("#chart")
+                        .selectAll("div")
+                        .data([4,8,15,16,23,42])
+                        .enter()
+                        .append("div")
+                        .style("height", (d)=> + "px")
+            </script>
 
-      </div>
+            <script>updateBody("Navigation/home.html")</script>
+
+        </div>
     </body>
 </html>
