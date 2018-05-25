@@ -1,1 +1,25 @@
 <a>TEST - HOME</a>
+
+<div class="row">
+    <form class="form-horizontal formular">
+        <fieldset>
+            <legend></legend>
+
+            <div class="col-md-12">
+
+            	<div class="chart"></div>
+
+            </div>   
+
+    <script>
+    	d3.select("#chart")
+          .selectAll("div")
+          .data([4,8,15,16,23,42])
+          .enter()
+          .append("div")
+          .style("height", (d)=> + "px")
+            
+        $(".pollGroup").on("keypress", "div:last input", function(){appendToPoll();});
+    
+    </script>
+</div>
