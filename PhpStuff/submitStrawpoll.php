@@ -1,4 +1,5 @@
 <?php
+var_dump("irgendein String");
 $aIncrFile = fopen("autoIncrement.txt", "w");
 $aIncr = fread($aIncrFile,filesize("autoIncrement.txt"));
 if ($aIncr == "")  $aIncr = 0;
