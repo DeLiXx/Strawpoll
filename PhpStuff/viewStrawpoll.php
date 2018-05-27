@@ -44,5 +44,9 @@ $appendHtml .=  '
         <div class="form-group pollGroup">
         </div>
     </fieldset>
-</form>'
+</form>
+<input type="text" value="http://' . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI] . '" readonly />'
+
+echo $appendHtml
 ?>
+
