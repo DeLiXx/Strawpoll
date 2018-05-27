@@ -1,24 +1,9 @@
-
-form class="form-horizontal formular" action="PhpStuff/submitStrawpoll.php" method="GET">
-        <fieldset>
-            <!-- Form Name -->
-            <legend></legend>
-            <input name="title" class="form-control pollOption pollOptionHeader" placeholder="Enter question" type="text" />
-            <!-- Appended checkbox -->
-            <div class="form-group pollGroup">
-            </div>
-        </fieldset>
-        <input type="submit" class="btn btn-success"  value="Create">
-        </input>
-        <input type="text" class="jqMaxRow" name="maxRow" value="0" style="visibility: hidden"></input>
-    </form>
-
 <?php
 
 $id = $_GET["id"];
 echo $id;
 $fileHandle = fopen("..\\Strawpolls\\"  . $aIncr . ".txt", "rb");
-$args = explode ("\r", fread($fileHandle, 9999));
+$args = explode ("\r\n", fread($fileHandle, 9999));
 
 $appendHtml = '
     <form class="form-horizontal formular">
