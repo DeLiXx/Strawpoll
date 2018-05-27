@@ -31,7 +31,7 @@ $appendHtml .=  '
         </div>
     </fieldset>
 </form>
-<input type="text" value="http://' . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI] . '" style="width:75%" readonly />';
+<input type="text" value="http://' . $_SERVER[HTTP_HOST] . '?id=' . $x . '" style="width:75%" readonly />';
 
 echo $appendHtml;
 ?>
