@@ -1,7 +1,7 @@
 <?php
 
 $id = $_GET["id"];
-$fileHandle = fopen("Strawpolls\\"  . $id . ".txt", "rb");
+$fileHandle = fopen("..\\Strawpolls\\"  . $id . ".txt", "rb");
 $args = explode ("|||", fread($fileHandle, 9999));
 fclose($fileHandle);
 echo $args;
