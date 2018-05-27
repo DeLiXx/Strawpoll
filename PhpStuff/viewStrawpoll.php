@@ -10,8 +10,9 @@ $appendHtml = '
             <fieldset>
                 <label name="title" class="form-control pollOption pollOptionHeader" placeholder="No Question" type="text" >' . $args[0] . '</label>
                 <div class="form-group pollGroup">';
-
+$y = 0;
 for($x = 1; $x < sizeOf($args) -1; $x += 2){
+    $y++;
     $appendHtml .= '
     <div class="row">
         <div class="col-md-8">
@@ -21,10 +22,10 @@ for($x = 1; $x < sizeOf($args) -1; $x += 2){
             <label class="jqVoteRow' . $x . '" >' . $args[$x + 1] . '</label>
         </div>';
 
-        if ($voted != "True"){
+        if ($voted != "true"){
             $appendHtml .= '
                 <div class="col-md-2">
-                    <input type="button" value="Vote" class="btn btn-info" onclick="incrementVote(' . $id . ',' . $x .');" />
+                    <input type="button" value="Vote" class="btn btn-info" onclick="incrementVote(' . $id . ',' . $y .');" />
                 </div>';
         }
     $appendHtml .= '</div>';
