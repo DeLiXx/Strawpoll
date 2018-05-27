@@ -5,13 +5,8 @@ function onLoad() {
     objQuery = getQuerryParams();
 
     if( objQuery!= null && objQuery.id != null) {
-        //TBA updatesBody with selected strawpoll
-
-        /**/
-        alert(objQuery);
-
-
-        
+        //updatesBody with selected strawpoll
+        updateBody("PhpStuff/viewStrawpoll.php?" + objQuery.id  );      
         }
 }
 

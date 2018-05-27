@@ -16,4 +16,7 @@ fwrite($strawFile, $_GET["title"] . "\r\n");
 for($i=1; $i < $_GET["maxRow"]; $i++)
     fwrite($strawFile, $_GET["selectionRow" . $i] . ";0\r\n");
 fclose($strawFile);
+
+header("..\\?id=" . $aIncr);
+exit;
 ?>
