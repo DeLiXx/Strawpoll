@@ -8,6 +8,7 @@ function onLoad() {
         //updatesBody with selected strawpoll
         updateBody("PhpStuff/viewStrawpoll.php?" + objQuery.id  );      
         }
+     else updateBody("Navigation/home.html");
 }
 
 //Returns all URL Query Paramters in a JS-Object
@@ -42,4 +43,8 @@ currentRow.val(currentRow.val() - -1);
     "</input>" +
     "</div>"
     );
+}
+
+function incrementVote(id, x){
+    alert(id + " | " + x);
 }
