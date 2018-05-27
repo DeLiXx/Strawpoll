@@ -6,7 +6,7 @@ function onLoad() {
 
     if( objQuery!= null && objQuery.id != null) {
         //updatesBody with selected strawpoll
-        updateBody("PhpStuff/viewStrawpoll.php?" + objQuery.id  );      
+        updateBody("PhpStuff/viewStrawpoll.php?id" + objQuery.id  );      
         }
      else updateBody("Navigation/home.html");
 }
