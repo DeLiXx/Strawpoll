@@ -11,7 +11,7 @@ $aIncrFile = fopen('autoIncrement.txt', 'wb');
 fwrite($aIncrFile, $aIncr);
 fclose($aIncrFile);
 
-$strawFile = fopen("../Strawpolls/" . $aIncr . ".txt", "wb");
+$strawFile = fopen("..\\Strawpolls\\"  . $aIncr, "wb");
 fwrite($strawFile, $_GET["title"] . "/n");
 for($i=1; $i < $_GET["maxRow"]; $i++)
     fwrite($strawFile, $_GET["selectionRow" . $i] . ";0/n");
