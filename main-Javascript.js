@@ -47,7 +47,7 @@ currentRow.val(currentRow.val() - -1);
 
 function incrementVote(id, x){
     var objQuery = getQuerryParams();
-    if(objQuery!= null && objQuery.voted = null){
+    if(objQuery!= null && objQuery.voted == null){
         $.get( "PhpStuff/incrementVote.php?id=" + id + "&x=" + x, function(){
             window.location += "&voted=1";
         });
