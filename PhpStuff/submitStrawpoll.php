@@ -12,7 +12,7 @@ fclose($aIncrFile);
 $strawFile = fopen("..\\Strawpolls\\"  . $aIncr . ".txt", "wb");
 $arr = array($_GET["title"]);
 for($i=1; $i < $_GET["maxRow"]; $i++){
-    $arr[] = $_GET["select, ionRow" . $i];
+    $arr[] = $_GET["selectionRow" . $i];
     $arr[] = "0";
 }
 fwrite($strawFile, serialize($arr));

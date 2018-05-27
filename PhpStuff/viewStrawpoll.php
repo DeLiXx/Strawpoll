@@ -21,7 +21,7 @@ for($x = 1; $x < sizeOf($args) -1; $x += 2){
             <label class="jqVoteRow' . $x . '" >' . $args[$x + 1] . '</label>
         </div>
         <div class="col-md-2">
-            <input type="button" value="Vote" class="btn btn-info" onclick="incrementVote(' . $id . ',' . $x .'); return false;" />
+            <input type="button" value="Vote" class="btn btn-info" onclick="incrementVote(' . $id . ',' . $x .');" />
         </div>
     </div>';
 }
