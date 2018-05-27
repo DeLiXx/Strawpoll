@@ -12,10 +12,8 @@ fwrite($aIncrFile, $aIncr);
 fclose($aIncrFile);
 
 $strawFile = fopen("..\\Strawpolls\\"  . $aIncr . ".txt", "wb");
-fwrite($strawFile, $_GET["title"] . "/n");
-echo "..\\Strawpolls\\"  . $aIncr . ".txt";
-echo $_GET["title"] . "/n";
+fwrite($strawFile, $_GET["title"] . "\n");
 for($i=1; $i < $_GET["maxRow"]; $i++)
-    fwrite($strawFile, $_GET["selectionRow" . $i] . ";0/n");
+    fwrite($strawFile, $_GET["selectionRow" . $i] . ";0\n");
 fclose($strawFile);
 ?>
