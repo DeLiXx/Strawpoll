@@ -26,7 +26,7 @@ for($x = 1; $x < sizeOf($args) -1; $x += 2){
         <div class="col-md-2">
             <input type="button" value="Vote" class="btn btn-info" onclick="incrementVote(' . $id . ',' . $x .');" />
         </div>';
-    $appendHtml .= '</div>'
+    $appendHtml .= '</div>';
 }
 
 $appendHtml .=  '
