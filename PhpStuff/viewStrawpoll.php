@@ -4,6 +4,7 @@ $id = $_GET["id"];
 echo $id;
 $fileHandle = fopen("..\\Strawpolls\\"  . $aIncr . ".txt", "rb");
 $args = explode ("\r\n", fread($fileHandle, 9999));
+fclose($fileHandle);
 
 $appendHtml = '
     <form class="form-horizontal formular">
