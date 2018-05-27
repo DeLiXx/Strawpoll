@@ -5,11 +5,10 @@
     $fileHandle = fopen("..\\Strawpolls\\"  . $id . ".txt", "r+b");
     $fText = fread($fileHandle, 9999);
 
-    $votes = (int)explode(";",explode ("|", $fText)[$id])[1] + 1;
+    $args =unserialize (fread($fileHandle, 9999));
 
-
-    $wildcardString = "";
-    for($i = 0; $i < $x; $i++){
-        $wildcardString .= "*\r";
-    }
+    $args[$x * 2 + 1] += 1;
+    fwrite($fileHandle, serialize($args));
+    fclose($fileHandle);
+    return NULL;
 ?>
