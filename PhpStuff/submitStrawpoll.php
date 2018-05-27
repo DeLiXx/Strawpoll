@@ -10,9 +10,9 @@ fwrite($aIncrFile, $aIncr);
 fclose($aIncrFile);
 
 $strawFile = fopen("..\\Strawpolls\\"  . $aIncr . ".txt", "wb");
-fwrite($strawFile, $_GET["title"] . "|||);
+fwrite($strawFile, $_GET["title"] . "|||");
 for($i=1; $i < $_GET["maxRow"]; $i++)
-    fwrite($strawFile, $_GET["selectionRow" . $i] . ;;;0|||");
+    fwrite($strawFile, $_GET["selectionRow" . $i] . ";;;0|||");
 fclose($strawFile);
 
 header("Location: \\..\\?id=" . $aIncr);
