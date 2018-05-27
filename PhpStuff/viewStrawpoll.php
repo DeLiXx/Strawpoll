@@ -1,11 +1,11 @@
 <?php
 
 $id = $_GET["id"];
-echo $id;
-$fileHandle = fopen("Strawpolls\\"  . $aIncr . ".txt", "rb");
+$fileHandle = fopen("Strawpolls\\"  . $id . ".txt", "rb");
 $args = explode ("|||", fread($fileHandle, 9999));
 fclose($fileHandle);
-
+echo $args;
+echo $args[0];
 $appendHtml = '
     <form class="form-horizontal formular">
             <fieldset>
