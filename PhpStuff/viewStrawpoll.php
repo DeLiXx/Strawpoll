@@ -15,8 +15,8 @@ form class="form-horizontal formular" action="PhpStuff/submitStrawpoll.php" meth
 
 <?php
 
-$id = $_GET["id"]
-echo $id
+$id = $_GET["id"];
+echo $id;
 $fileHandle = fopen("..\\Strawpolls\\"  . $aIncr . ".txt", "rb");
 $args = explode ("\r", fread($fileHandle, 9999));
 
@@ -24,7 +24,7 @@ $appendHtml = '
     <form class="form-horizontal formular">
             <fieldset>
                 <input name="title" class="form-control pollOption pollOptionHeader" placeholder="No Question" type="text" value=' . $args[0] . ' />
-                <div class="form-group pollGroup">'
+                <div class="form-group pollGroup">';
 
 for($x = 1; $x < sizeOf($args); $x++){
     $voteValues = explode(";", $args[$x]);
@@ -37,7 +37,7 @@ for($x = 1; $x < sizeOf($args); $x++){
     </div>
     <div class="col-md-4">
         <input type="button" class="btn btn-info" onclick="incrementVote(' . $id . ',' . $x .'); return false;" />
-    </div>'
+    </div>';
 }
 
 $appendHtml .=  '
@@ -45,8 +45,8 @@ $appendHtml .=  '
         </div>
     </fieldset>
 </form>
-<input type="text" value="http://' . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI] . '" readonly />'
+<input type="text" value="http://' . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI] . '" readonly />';
 
-echo $appendHtml
+echo $appendHtml;
 ?>
 
