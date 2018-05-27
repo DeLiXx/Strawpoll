@@ -3,15 +3,13 @@
     $x = $_GET["x"];
 
     $fileHandle = fopen("..\\Strawpolls\\"  . $id . ".txt", "rb");
-    $fText = fread($fileHandle, 9999);
-    
-    $args = unserialize (fread($fileHandle, 9999));
+    $fArray = unserialize (fread($fileHandle, 9999));
     fclose($fileHandle);
 
-    $voteValue = (int)$args[$x * 2 + 1];
+    $voteValue = (int)$fArray[$x * 2 + 1];
     $voteValue ++;
-    $args[$x * 2 + 1] = "" . $voteValue;
+    $fArray[$x * 2 + 1] = "" . $voteValue;
     $fileHandle = fopen("..\\Strawpolls\\"  . $id . ".txt", "wb");
-    fwrite($fileHandle, serialize($args));
+    fwrite($fileHandle, serialize($fArray));
     fclose($fileHandle);
 ?>
