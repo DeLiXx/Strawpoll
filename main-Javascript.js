@@ -36,8 +36,8 @@ function updateBody(strHtml) {
 }
 
 function appendToPoll(){
-var currentRow = $(".jqjqMaxRow");
-currentRow.val(currentRow.val() + 1);
+var currentRow = $(".jqMaxRow");
+currentRow.val(currentRow.val() - -1);
 
 
     $(".pollGroup").append(
