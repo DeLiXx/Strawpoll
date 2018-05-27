@@ -18,6 +18,9 @@ fwrite($aIncrFile, $aIncr);
 fclose($aIncrFile);
 
 $strawFile = fopen("../Strawpolls/" + $aIncr + ".txt", "wb");
-fwrite($strawFile, "Nibbers my Nibbers/nYoloololo;509/nTrimoff;20")
+fwrite($strawFile, $_GET["title"] + "/n");
+for($i=1; $i < $_GET["maxRow"], $i++){
+    fwrite($strawFile, $_GET["selectionRow" + $i] + ";0/n")
+}
 fclose($strawFile);
 ?>

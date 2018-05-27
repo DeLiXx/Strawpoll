@@ -36,10 +36,14 @@ function updateBody(strHtml) {
 }
 
 function appendToPoll(){
+var currentRow = $(".jqjqMaxRow");
+currentRow.val(currentRow.val() + 1);
+
+
     $(".pollGroup").append(
     "<div class='col-md-12'>" +
     "<div class='input-group'>" +
-    "<input name='appendedcheckbox' class='form-control pollOption' placeholder='Enter poll option' type='text' >" +
+    "<input name='selectionRow" + currentRow.val() + "' class='form-control pollOption' placeholder='Enter poll option' type='text' >" +
     "</input>" +
     "</div>"
     );
