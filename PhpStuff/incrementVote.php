@@ -6,9 +6,9 @@
     $fArray = unserialize (fread($fileHandle, 9999));
     fclose($fileHandle);
 
-    $voteValue = (int)$fArray[$x * 2 + 1];
+    $voteValue = (int)$fArray[$x * 2];
     $voteValue ++;
-    $fArray[$x * 2 + 1] = "" . $voteValue;
+    $fArray[$x * 2] = "" . $voteValue;
     $fileHandle = fopen("..\\Strawpolls\\"  . $id . ".txt", "wb");
     fwrite($fileHandle, serialize($fArray));
     fclose($fileHandle);
