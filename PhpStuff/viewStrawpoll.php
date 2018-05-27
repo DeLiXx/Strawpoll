@@ -1,6 +1,5 @@
 <?php
 
-$voted = $_GET["voted"];
 $id = $_GET["id"];
 $fileHandle = fopen("..\\Strawpolls\\"  . $id . ".txt", "rb");
 $args =unserialize (fread($fileHandle, 9999));
@@ -22,7 +21,7 @@ for($x = 1; $x < sizeOf($args) -1; $x += 2){
             <label class="jqVoteRow' . $x . '" >' . $args[$x + 1] . '</label>
         </div>';
 
-        if ($voted != "1"){
+        if (isset($_GET["voted"])){
             $appendHtml .= '
                 <div class="col-md-2">
                     <input type="button" value="Vote" class="btn btn-info" onclick="incrementVote(' . $id . ',' . $y .');" />
