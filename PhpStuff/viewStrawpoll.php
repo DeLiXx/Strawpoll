@@ -22,7 +22,7 @@ for($x = 1; $x < sizeOf($args) -1; $x += 2){
             <label class="jqVoteRow' . $x . '" >' . $args[$x + 1] . '</label>
         </div>';
 
-        if ($voted != "true"){
+        if ($voted != 1){
             $appendHtml .= '
                 <div class="col-md-2">
                     <input type="button" value="Vote" class="btn btn-info" onclick="incrementVote(' . $id . ',' . $y .');" />
