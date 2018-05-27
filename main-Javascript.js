@@ -46,5 +46,7 @@ currentRow.val(currentRow.val() - -1);
 }
 
 function incrementVote(id, x){
-    alert(id + " | " + x);
+    $.get( "test.php", { id: id, x: x }, function(){
+        window.location += "&canVote=false"
+    });
 }
