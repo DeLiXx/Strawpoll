@@ -3,7 +3,7 @@
 $id = $_GET["id"];
 echo $id;
 $fileHandle = fopen("Strawpolls\\"  . $aIncr . ".txt", "rb");
-$args = explode ("\r\n", fread($fileHandle, 9999));
+$args = explode ("|||", fread($fileHandle, 9999));
 fclose($fileHandle);
 
 $appendHtml = '
@@ -13,7 +13,7 @@ $appendHtml = '
                 <div class="form-group pollGroup">';
 
 for($x = 1; $x < sizeOf($args); $x++){
-    $voteValues = explode(";", $args[$x]);
+    $voteValues = explode(";;;", $args[$x]);
     $appendHtml .= '
     <div class="col-md-6">
         <label value="' . $voteValues[0] . '" />
