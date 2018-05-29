@@ -15,14 +15,9 @@
                  Sorry, your browser does not support inline SVG.
               </svg> 
             </div>
-    <script>
-    	d3.select('#chart')
-      .selectAll("div")
-      .data([20, 30, 50, 70, 100, 150])
-      .enter()
-      .append("div")
-      .style("height", (d) => d + "px")
             
+    <script>
+           
         $(".pollGroup").on("keypress", "div:last input", function(){appendToPoll();});
     
     </script>
