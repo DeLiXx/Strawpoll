@@ -1,23 +1,50 @@
-<a>TEST - HOME</a>
-
 <div class="row">
     <form class="form-horizontal formular">
         <fieldset>
             <legend></legend>
-
-            <div class="col-md-12">
-            	 <div id="chart"></div>
-            </div>   
-
-            <div class=" col-md-12">
-              <svg width="100" height="100">
-                 <circle cx="50" cz="50" cy="50" r="50" fill="yellow" />
-                 Sorry, your browser does not support inline SVG.
-              </svg> 
+            <div class="cards">
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="mitarbeiterfoto-2.png" alt="Paul Seibel" style="min-height: 180px; min-width: 286px; max-width: 286px; max-height: 286px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Paul Seibel</h5>
+                            <p class="card-text">Paul ist Entwickler dieser Seite und in der Klasse B1IT.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="mitarbeiterfoto-1.png" alt="Morice van Eckeveld" style="min-height: 180px; min-width: 286px; max-width: 286px; max-height: 286px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Morice van Eckeveld</h5>
+                            <p class="card-text">Morice ist Entwickler dieser Seite und in der Klasse B1IT.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="mitarbeiterfoto-3.png" alt="Batman" style="min-height: 180px; min-width: 286px; max-width: 286px; max-height: 286px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Batman</h5>
+                            <p class="card-text">Freier Mitarbeiter der unser Git System von Gesindel befreit.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+
+                <!--Hier sollte mal eine art Dashboard entstehen.
+                <svg width="500" height="200">
+                    <rect y="10" x="" width="200" height="20" style="fill:blue;stroke-width:3;stroke:grey" />
+                    <rect y="40" x="" width="160" height="20" style="fill:blue;stroke-width:3;stroke:grey" />
+                    <rect y="70" x="" width="120" height="20" style="fill:blue;stroke-width:3;stroke:grey" />
+                    <rect y="100" x="" width="40" height="20" style="fill:blue;stroke-width:3;stroke:grey" />
+                    <rect y="130" x="" width="10" height="20" style="fill:blue;stroke-width:3;stroke:grey" />
+                    <rect y="160" x="" width="20" height="20" style="fill:blue;stroke-width:3;stroke:grey" />
+                </svg> -->
+            </div>
+
     <script>
-           
+
         $(".pollGroup").on("keypress", "div:last input", function(){appendToPoll();});
     
     </script>

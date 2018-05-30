@@ -9,6 +9,8 @@ nav{
 	height: 8%;
 	width:100%;
 	opacity: 70%;
+	position: fixed;
+	border-bottom: 1px solid #1b464b;
 }
 form{
 	margin-top: 5%;
@@ -49,9 +51,23 @@ button.navbar-toggler{
 	z-index: 1;
 }
 
-#chart div {
-  display: inline-block;
-  background: #4285F4;
-  width: 40px;
-  margin-right: 6px;
+.card {
+	float: left;
+	min-height: 350px;
+	margin-left: 5%;
+}
+
+footer {
+	min-height: 70px;
+	width: 100%;
+	border: 1px solid #1b464b;
+	position: absolute;
+	margin-top: 25%;
+	background-color: #40a9b7;
+	border-radius: 1%;
+	font-size: 20px;
+}
+footer a {
+	color: #d9d9d9;
+	font-style: italic;
 }
